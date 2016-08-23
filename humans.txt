@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Daniel Nüst -- contributor -- @nordholmen
+
+# THANKS
+
+    Daniel Nüst
+
+# TECHNOLOGY COLOPHON
+
+    Containers, Docker
+    Geo Web Services, OSGeo

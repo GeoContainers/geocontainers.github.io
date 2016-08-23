@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 256 256"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="geocontainers-logo-white.svg"
+   inkscape:export-filename="/home/daniel/git/geocontainers/geocontainers-logo-white.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
+  <metadata
+     id="metadata50">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs48" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="25"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1863"
+     inkscape:window-height="1059"
+     id="namedview46"
+     showgrid="false"
+     inkscape:zoom="0.77617303"
+     inkscape:cx="-549.09702"
+     inkscape:cy="54.330541"
+     inkscape:window-x="57"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4237"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-path-clip="true"
+     inkscape:snap-path-mask="true"
+     inkscape:snap-grids="false"
+     inkscape:snap-global="true"
+     inkscape:snap-nodes="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-page="true" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="morph">
+    <ellipse
+       inkscape:tile-y0="44.747187"
+       inkscape:tile-x0="-26.04926"
+       cy="129.57845"
+       cx="57.171532"
+       id="use4766"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       rx="0"
+       ry="82.294792" />
+    <ellipse
+       inkscape:tile-y0="44.747187"
+       inkscape:tile-x0="-26.04926"
+       cy="129.57845"
+       cx="57.171532"
+       id="use4768"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       rx="0"
+       ry="82.294792" />
+    <g
+       id="g4237"
+       transform="matrix(1.1753822,0,0,1.1750963,-21.117445,-19.279108)"
+       inkscape:export-filename="/home/daniel/git/geocontainers/geocontainers.github.io/tile.png"
+       inkscape:export-xdpi="180.00999"
+       inkscape:export-ydpi="180.00999"
+       style="fill:#ffffff">
+      <path
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccc"
+         inkscape:connector-curvature="0"
+         d="m 110.09922,16.406414 125.66873,0 0,185.740796 -125.66004,0 -6.32155,-15.47776 6.32081,0 -0.008,-154.806007 -6.48242,0.02013 z m 10.19684,15.480891 15.27262,0 0,154.783985 -15.27262,0 z m 28.19675,0 15.27262,0 0,154.783985 -15.27262,0 z m 28.20183,0 15.27261,0 0,154.783985 -15.27261,0 z m 28.1867,0 14.70435,0 0,154.783985 -14.70435,0 z"
+         style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:none;stroke-width:10.19999981;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path20-60-1" />
+      <g
+         style="fill:none;stroke:#ffffff;stroke-width:10.19999981;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         transform="matrix(1.0626534,0,0,1.0626534,-2.6126586,-263.90426)"
+         id="g4823-2">
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10.19999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 109.7791,433.41842 a 82.294792,82.294792 0 0 1 -3.00523,0.0549 82.294792,82.294792 0 0 1 -82.294789,-82.29479 82.294792,82.294792 0 0 1 82.294789,-82.2948 82.294792,82.294792 0 0 1 3.00786,0.055"
+           id="use4756-9" />
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10.19999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 109.32399,433.41046 a 63.366989,82.294792 0 0 1 -2.47604,0.0629 63.366989,82.294792 0 0 1 -63.366985,-82.29479 63.366989,82.294792 0 0 1 63.366985,-82.2948 63.366989,82.294792 0 0 1 2.47815,0.063"
+           id="use4758-3" />
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10.19999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 109.77694,433.30331 a 44.439186,82.294792 0 0 1 -2.8549,0.17 44.439186,82.294792 0 0 1 -44.439191,-82.29479 44.439186,82.294792 0 0 1 44.439191,-82.2948 44.439186,82.294792 0 0 1 2.85767,0.17033"
+           id="use4760-1" />
+        <path
+           inkscape:connector-curvature="0"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10.19999981;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 107.04502,433.47316 a 25.511385,82.294792 0 0 1 -0.0489,1.5e-4 25.511385,82.294792 0 0 1 -25.511388,-82.29479 25.511385,82.294792 0 0 1 25.511388,-82.2948 25.511385,82.294792 0 0 1 0.0489,1.5e-4"
+           id="use4762-9" />
+      </g>
+    </g>
+  </g>
+</svg>

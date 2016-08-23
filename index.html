@@ -1,8 +1,378 @@
-<html>
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Geocontainers</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#008000">
+    <meta name="theme-color" content="#008000">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+    <style>
+        /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+        
+        html {
+            line-height: 1.15;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            color: #fff;
+            font: 17px/1.4 'Open Sans', sans-serif;
+            text-align: center
+        }
+        
+        body {
+            margin: 0;
+            background-color: #008000;
+        }
+        
+        a {
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+            color: #008000;
+            text-decoration: none
+        }
+        
+        a:active,
+        a:hover {
+            outline-width: 0
+        }
+        
+        strong {
+            font-weight: bolder
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            line-height: 1.2em;
+            margin: 0 .5em .75em
+        }
+        
+        img {
+            border-style: none;
+            vertical-align: middle
+        }
+        
+        [type=button]::-moz-focus-inner,
+        [type=reset]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner,
+        button::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+        
+        [type=button]:-moz-focusring,
+        [type=reset]:-moz-focusring,
+        [type=submit]:-moz-focusring,
+        button:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+        
+        a:active,
+        a:focus,
+        a:hover {
+            text-decoration: underline
+        }
+        
+        ::-moz-selection {
+            background-color: #b3d4fc;
+            text-shadow: none
+        }
+        
+        ::selection {
+            background-color: #b3d4fc;
+            text-shadow: none
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin: 1.5em 0
+        }
+        
+        h3 {
+            font-size: 1em;
+            margin: 0 0 .5em
+        }
+        
+        p {
+            margin: 0 0 2em
+        }
+        
+        .grid {
+            margin: 0 -20px;
+            letter-spacing: -.31em;
+            word-spacing: -.43em;
+            text-rendering: optimizespeed
+        }
+        
+        .grid-cell {
+            display: inline-block;
+            letter-spacing: normal;
+            text-align: left;
+            text-rendering: auto;
+            vertical-align: top;
+            width: 50%;
+            word-spacing: normal
+        }
+        
+        .grid-cell&gt;
+        * {
+            padding: 0 15px
+        }
+        
+        .inline-block-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        .inline-block-list li {
+            display: inline-block;
+            margin: 0 0 0 1.5em;
+            padding: 0;
+            vertical-align: top
+        }
+        
+        .inline-block-list li:first-child {
+            margin-left: 0
+        }
+        
+        .clearfix:after,
+        .clearfix:before {
+            content: ' ';
+            display: table
+        }
+        
+        .clearfix:after {
+            clear: both
+        }
+        
+        .clearfix {
+            *zoom: 1
+        }
+        
+        .container {
+            margin: 0 auto;
+            max-width: 960px;
+            padding: 0 10px
+        }
+        
+        .aside {
+            background-color: #eee;
+            border: solid #e3e3e3;
+            border-width: 1px 0;
+            font-size: 1.125em;
+            padding: 1em 0
+        }
+        
+        .Icon {
+            display: inline-block;
+            height: 16px;
+            margin: -3px 1px 0 0;
+            vertical-align: middle;
+            width: 16px
+        }
+        
+        .Icon--github {
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEgMTIxIj48ZyBmaWxsPSIjMTkxNzE3Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTYwLjUgMS42Yy0zMy4zIDAtNjAuNCAyNy02MC40IDYwLjQgMCAyNi43IDE3LjMgNDkuMyA0MS4zIDU3LjMgMyAuNiA0LjEtMS4zIDQuMS0yLjkgMC0xLjQtLjEtNi4yLS4xLTExLjItMTYuNyAzLjYtMjAuMy03LjItMjAuMy03LjItMi43LTctNi43LTguOC02LjctOC44LTUuNS0zLjcuNC0zLjcuNC0zLjcgNi4xLjQgOS4zIDYuMiA5LjMgNi4yIDUuNCA5LjIgMTQuMSA2LjYgMTcuNiA1IC41LTMuOSAyLjEtNi42IDMuOC04LjEtMTMuNC0xLjQtMjcuNS02LjYtMjcuNS0yOS44IDAtNi42IDIuNC0xMiA2LjItMTYuMi0uNi0xLjUtMi43LTcuNy42LTE2IDAgMCA1LjEtMS42IDE2LjYgNi4yIDQuOC0xLjMgMTAtMiAxNS4xLTJzMTAuMy43IDE1LjEgMmMxMS41LTcuOCAxNi42LTYuMiAxNi42LTYuMiAzLjMgOC4zIDEuMiAxNC41LjYgMTYgMy45IDQuMiA2LjIgOS42IDYuMiAxNi4yIDAgMjMuMi0xNC4xIDI4LjMtMjcuNSAyOS44IDIuMiAxLjkgNC4xIDUuNSA0LjEgMTEuMiAwIDguMS0uMSAxNC42LS4xIDE2LjYgMCAxLjYgMS4xIDMuNSA0LjEgMi45IDI0LTggNDEuMy0zMC42IDQxLjMtNTcuMyAwLTMzLjQtMjctNjAuNC02MC40LTYwLjR6Ii8+PHBhdGggZD0iTTIzIDg4LjNjLS4xLjMtLjYuNC0xIC4ycy0uNy0uNi0uNS0uOWMuMS0uMy42LS40IDEtLjJzLjYuNi41Ljl6bS0uOC0uNU0yNS40IDkxYy0uMy4zLS45LjEtMS4yLS4zLS40LS40LS41LTEtLjItMS4zLjMtLjMuOC0uMSAxLjIuMy41LjUuNSAxLjEuMiAxLjN6bS0uNS0uNk0yNy44IDk0LjVjLS40LjMtMSAwLTEuMy0uNS0uNC0uNS0uNC0xLjIgMC0xLjQuNC0uMyAxIDAgMS4zLjUuNC41LjQgMS4xIDAgMS40em0wIDBNMzEuMSA5Ny45Yy0uMy40LTEgLjMtMS42LS4yLS41LS41LS43LTEuMi0uMy0xLjUuMy0uNCAxLS4zIDEuNi4yLjUuNC42IDEuMS4zIDEuNXptMCAwTTM1LjYgOTkuOGMtLjEuNS0uOC43LTEuNS41LS43LS4yLTEuMS0uOC0xLTEuMi4xLS41LjgtLjcgMS41LS41LjcuMiAxLjEuNyAxIDEuMnptMCAwTTQwLjUgMTAwLjJjMCAuNS0uNi45LTEuMy45LS43IDAtMS4zLS40LTEuMy0uOXMuNi0uOSAxLjMtLjljLjcgMCAxLjMuNCAxLjMuOXptMCAwTTQ1LjEgOTkuNGMuMS41LS40IDEtMS4xIDEuMS0uNy4xLTEuMy0uMi0xLjQtLjctLjEtLjUuNC0xIDEuMS0xLjEuNy0uMSAxLjMuMiAxLjQuN3ptMCAwIi8+PC9nPjwvc3ZnPgo=)
+        }
+        
+        .site-header {
+            padding-top: 42px
+        }
+        
+        .site-logo {
+            color: #fff;
+            float: left;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 32px;
+            text-decoration: none;
+            text-shadow: 2px 2px 0 #000;
+            text-transform: uppercase
+        }
+        
+        .site-nav {
+            float: right;
+            list-style-type: none;
+            margin: 7px 0 0;
+            padding: 0
+        }
+        
+        .site-nav a {
+            color: #ffa000;
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase
+        }
+        
+        .site-nav a:active,
+        .site-nav a:focus,
+        .site-nav a:hover {
+            color: #fff
+        }
+        
+        .site-promo {
+            padding: 4em 0 6em
+        }
+        
+        .site-promo .description {
+            color: #ddd;
+            font-size: 1.2em;
+            margin: 1em 2em 0
+        }
+             
+        .site-section {
+            background-color: #f9f9f9;
+            color: #333;
+            overflow: hidden;
+            padding: 2em 0 6em
+        }
+
+        .site-footer {
+            font-size: .875em;
+            padding: 2em
+        }
+        
+        .site-footer a {
+            color: #ffa000
+        }
+        
+        @media only screen and (max-width:800px) {
+            .site-logo,
+            .site-nav {
+                float: none
+            }
+            .site-nav li {
+                margin: 0 .5em
+            }
+            .site-header {
+                padding-top: 40px
+            }
+            .site-promo {
+                padding: 3em 0
+            }
+            .site-section {
+                padding: 0 1em 4em
+            }
+        }
+        
+        @media only screen and (max-width:600px) {
+            html {
+                font-size: 14px
+            }
+            .site-footer {
+                font-size: 1em
+            }
+        }
+        
+        @media only screen and (max-width:460px) {
+            .grid-cell {
+                width: 100%
+            }
+        }
+        
+        @media only screen and (max-width:420px) {
+            h1 {
+                font-size: 2.5em
+            }
+            html {
+                font-size: 13px
+            }
+        }
+    </style>
 </head>
 
 <body>
-Welcome!
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container">
+        <div role="banner" class="site-header clearfix">
+            <div class="site-logo">Geocontainers</div>
+            <ul class="site-nav inline-block-list">
+                <li><a data-ga-label="Registry" data-ga-action="Nav click" data-ga-category="Outbound links" href="https://hub.docker.com/r/geocontainers/">Registry</a></li>
+                <li><a data-ga-label="Source code on GitHub" data-ga-action="Nav click" data-ga-category="Outbound links" href="https://github.com/geocontainers/">GitHub</a></li>
+                <li><a data-ga-label="Documentation" data-ga-action="Nav click" data-ga-category="Outbound links" href="https://github.com/GeoContainers/dockerfiles/wiki">Documentation</a></li>
+                <li><a data-ga-label="About" data-ga-action="Nav click" href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="site-promo">
+            <img src="img/geocontainers-logo-white.svg" width="200px" />
+            <h1>Containers for geospatial web services and applications</h1>
+            <p class="description">Geocontainers help you running geospatial web services or applications for testing, development, and production
+                deployments. Based on <strong>Docker</strong>, they get you started <strong>faster</strong> building upon
+                a <strong>strong</strong> foundation for development, testing, and production deployment. All containers
+                and documentation is provided under permissive <strong>open source</strong> licenses.</p>
+        </div>
+    </div>
+    <div class="site-section">
+        <div class="container">
+            <h2>Save time. Develop. Test. Deploy.</h2>
+            <div class="grid">
+                <div class="grid-cell">
+                    <h3>Community driven</h3>
+                    <p>Geocontainers was initiated by Daniel Nüst @ FOSS4G 2016, but only works if independent developers and
+                        projects contribute images to the <a href="https://github.com/geocontainers/dockerfiles" title="Dockerfile repository">repository of Dockerfiles</a>.</p>
+                </div>
+                <div class="grid-cell">
+                    <h3>Diversity and expansion</h3>
+                    <p>Geocontainers are not replacing images provided by software projects, but provide a platform to collaborate
+                        on images when the software communities cannot maintain one. Time will tell if Geocontainers can
+                        become a one stop shop for container images in the geospatial domain.</p>
+                </div>
+                <div class="grid-cell">
+                    <h3>Standing on the shoulders of giants</h3>
+                    <p><a href="http://docker.com/" title="Docker website">Docker</a> is the most popular platform for containeraization
+                        of applications today. Nothing of this would be possible without this <a href="https://github.com/docker"
+                            title="Docker on GitHub">open source project</a>.</p>
+                </div>
+                <div class="grid-cell">
+                    <h3>Imitation is the sincerest form of flattery [<a href="https://en.wikipedia.org/wiki/Charles_Caleb_Colton#cite_note-1"
+                            title="Quote by Charles Caleb Colton">*</a>]</h3>
+                    <p>Geocontainers is a shameless rip-off of <a href="http://biodocker.org/" title="Biodocker project">Biodocker</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a name="about"></a>
+    <div class="site-section">
+        <h2>About</h2>
+        <p><a href="https://github.com/orgs/geocontainers/people">Contributors</a></p>
+    </div>
+
+    <div class="aside">
+        <div class="container">
+            <ul class="inline-block-list">
+                <li>
+                    <a data-ga-label="Report issues" data-ga-action="Footer click" data-ga-category="Outbound links" href="https://github.com/GeoContainers/dockerfiles/issues"><span class="Icon Icon--github"></span> Report issues</a>
+                </li>
+                <li>
+                    <a data-ga-label="Write email" data-ga-action="Footer click" data-ga-category="Outbound links" href="mailto:contact@geocontainers.org">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
